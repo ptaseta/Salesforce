@@ -1,0 +1,58 @@
+.THIS {
+}
+
+.THIS button {
+    background-color:hotpink;
+    border: none;
+    padding: 7px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.THIS tr {
+    background-color: aqua;
+    height: 50px;
+    width: 500px;
+    padding: 10px;
+}
+
+.THIS div {
+    margin: 5px;
+    background-color:brown;
+}
+
+.THIS .rojo{
+    background-color: lightcoral;
+    margin: 5px;
+    width: 100px;
+    height: 100px; 
+    border: 2px solid black;
+    transition-duration: 0.4s;
+}
+
+.THIS .rojo:hover{
+    background-color: red;
+    margin: 0px;
+    width: 110px;
+    height: 110px; 
+}
+
+
+.THIS .azul{
+    background-color: lightblue;
+    margin: 5px;
+    width: 100px;
+    height: 100px; 
+    border: 2px solid black;
+    transition-duration: 0.4s;
+}
+
+.THIS .azul:hover{
+    background-color: cyan;
+    margin: 0px;
+    width: 110px;
+    height: 110px;
+}

@@ -1,0 +1,51 @@
+<aura:component controller="numeroAleatorio">
+    <aura:attribute name="topoActivo" type="Integer" />
+    <aura:attribute name="puntos" type="Integer" default="0" />
+    <aura:attribute name="puntosLista" type="List" />
+    <table>
+        <tr>
+            <td>
+                <c:topo aura:id="1" topo="1" />
+            </td>
+            <td>
+                <c:topo aura:id="2" topo="2" />
+            </td>
+            <td>
+                <c:topo aura:id="3" topo="3" />
+            </td>
+            <td>
+                <c:topo aura:id="4" topo="4" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <c:topo aura:id="5" topo="5" />
+            </td>
+            <td>
+                <c:topo aura:id="6" topo="6" />
+            </td>
+            <td>
+                <c:topo aura:id="7" topo="7" />
+            </td>
+            <td>
+                <c:topo aura:id="8" topo="8" />
+            </td>
+        </tr>
+
+    </table>
+
+    <div>
+        <button onclick="{!c.iniciar}">Iniciar</button>
+        <button onclick="{!c.almacenarPuntos}">Parar</button>
+    </div>
+    <div>
+        <h1>Puntos: {!v.puntos}</h1>
+    </div>
+    <div>
+        <h1>Historial de puntos: </h1>
+        <aura:iteration items="{!v.puntosLista}" var="puntos" indexVar="index">
+            <h3>Puntos partida {!index+1}: {!puntos}</h3>
+        </aura:iteration>
+    </div>
+    <aura:handler event="c:golpearTopo" action="{!c.golpearTopo}"/>
+</aura:component>	

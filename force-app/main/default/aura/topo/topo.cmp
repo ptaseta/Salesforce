@@ -1,0 +1,12 @@
+<aura:component>
+    <aura:attribute name="topo" type="String" default="topo"/>
+    <aura:attribute name="color" type="String" default="azul"/>
+    <aura:attribute name="activo" type="Boolean" default="False"/>
+
+    <div class="{!v.color}" style="padding: 10px;">
+        <div>Topo {!v.topo}</div>
+        <button onclick="{!c.golpear}">Golpear</button>
+    </div>
+    <aura:method name="iniciarFiesta" action="{!c.funcionParaElPadre}" />
+    <aura:handler event="c:mirarTopo" action="{!c.cambiarTopo}"/>
+</aura:component>	
